@@ -16,7 +16,7 @@ function Popular() {
       setPopular(JSON.parse(check));
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=16`
       );
       const data = await api.json();
 
@@ -71,7 +71,7 @@ const Card = styled.div`
     border-radius: 2em;
     position: absolute;
     left: 0;
-    width 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
